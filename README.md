@@ -107,6 +107,51 @@ face_recognition project/
 ├── README.md
 └── requirements.txt
 ```
+## Installation and Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Smriti9-r/face-verification-robustness.git
+cd face-verification-robustness
+```
+
+### 2. Create and activate a virtual environment
+
+**Windows (Command Prompt):**
+
+```cmd
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+**macOS/Linux:**
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+### 4. Launch the application
+
+```bash
+python -m streamlit run app.py
+```
+
+Streamlit will display a local URL that you can open in your browser.
+
+### Notes
+
+- Use a compatible Python version and the pinned dependencies in `requirements.txt`.
+- The LFW dataset is downloaded automatically on the first run when it is not already cached.
+- Some experiments may take time because they process face images and compute embeddings.
+
 
 ## Reproducibility
 
