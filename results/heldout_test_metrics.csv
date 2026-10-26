@@ -1,0 +1,2 @@
+threshold,test_auc,test_eer,far_at_validation_threshold,frr_at_validation_threshold
+0.408516,0.997078,0.017857,0.014286,0.016667

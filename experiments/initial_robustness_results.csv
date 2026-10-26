@@ -1,0 +1,12 @@
+condition,severity,cosine_similarity
+brightness,1.00,1.0000
+brightness,0.70,0.9787
+brightness,0.50,0.9577
+brightness,0.30,0.9544
+brightness,0.15,0.8941
+blur,0,0.9990
+blur,1,0.9907
+blur,2,0.9590
+blur,3,0.8692
+blur,5,0.7648
+blur,7,0.4916

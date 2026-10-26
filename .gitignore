@@ -1,0 +1,30 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Local datasets and downloaded images
+data/
+
+# Generated caches
+.cache/
+.ipynb_checkpoints/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+# Large generated embeddings and intermediate arrays
+results/*.npy
+results/*.npz
+
+# Keep final research results and figures
+!results/*.csv
+!results/*.png
+!results/figures/
+!results/figures/*.png
