@@ -20,6 +20,7 @@ The experiments use the **Labeled Faces in the Wild (LFW)** dataset, accessed th
 - Images are grouped by identity.
 - The dataset contains 9,164 images across 1,680 identities in the configuration used.
 - Identity-disjoint validation and test sets are used to reduce identity leakage between threshold selection and final evaluation.
+- The dataset is loaded using scikit-learn's fetch_lfw_people utility. It is downloaded automatically on the first run and cached locally for subsequent use. An internet connection is required for the initial download.
 
 ## Model and Methodology
 
