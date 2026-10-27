@@ -61,6 +61,10 @@ The held-out test set contains 840 genuine pairs and 840 impostor pairs.
 | Blur radius 3 | 0.7314 | 0.3292 | 0.0119 | 0.9238 |
 | Blur radius 7 | 0.5254 | 0.4756 | 0.0071 | 0.9964 |
 
+### Uncertainty Estimate
+
+A preliminary pair-level bootstrap with 2,000 resamples estimated a 95% confidence interval of [0.9942, 0.9991] for baseline AUC. This interval should be interpreted cautiously because pairs may share images or identities; pair-level resampling does not fully account for this dependence.
+
 ### Main Findings
 
 - The baseline model performs strongly on the held-out LFW pairs.
@@ -108,6 +112,7 @@ face_recognition project/
 └── requirements.txt
 ```
 ## Installation and Setup
+The project was developed and tested using Python 3.12.8.
 
 ### 1. Clone the repository
 
@@ -168,8 +173,7 @@ python src/verify_pair_split.py
 python src/evaluate_uncertainty.py
 ```
 
-**Note:** The pair-generation script recreates the validation and test pair files. The experiments may take time because transformed images need to be re-embedded. Existing results are already saved, so these commands are not necessary just to view the project.
-
+**Reproducibility note:** The commands below form a full experiment workflow and may overwrite existing pair files, metrics, or figures. Run them only when intentionally reproducing the experiments. Pair generation uses a fixed random seed, but results may depend on the dataset version, preprocessing, package environment, and execution order. Existing result files can be viewed without rerunning the experiments.
 ## Limitations
 
 - The study evaluates one pretrained model on one dataset.
